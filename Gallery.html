@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+  
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- NAV BAR -->
+
+
+  </head>
+
+  <!-- Body Content -->
+  <body>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+  
+  <!-- Brand -->
+  <a class="navbar-brand" href="index.html">Inazuma</a>
+  <img src="background\8.jpg"href="index.html" style="width: 40px;">
+
+  <!-- Toggler/collapsibe Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav ml-auto">   <!-- Left margin -->
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Gallery.html">Gallery</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Contact.html">Contact</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about us.html">About Us</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- NAV BAR End -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE 10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE 10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  -ms-flex: 50%; /* IE 10 */
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<div class="header" id="myHeader">
+  <h1>Art Collection</h1>
+  <p>Click on the buttons to change the grid view.</p>
+  <button class="btn" onclick="one()">1</button>
+  <button class="btn active" onclick="two()">2</button>
+  <button class="btn" onclick="four()">4</button>
+</div>
+
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <img src="background\mm1.png" style="width:100%">
+    <img src="background\mm2.png" style="width:100%">
+    <img src="background\mm3.png" style="width:100%">
+    <img src="background\mm4.png" style="width:100%">
+    <img src="background\mm5.png" style="width:100%">
+    <img src="background\mm6.png" style="width:100%">
+    <img src="background\mm7.png" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="background\fgo1.jpg" style="width:100%">
+    <img src="background\fgo2.jpg" style="width:100%">
+    <img src="background\fgo3.jpg" style="width:100%">
+    <img src="background\fgo4.jpg" style="width:100%">
+    <img src="background\fgo5.jpg" style="width:100%">
+    <img src="background\fgo6.jpg" style="width:100%">
+    <img src="background\inazuma art 4.jpg" style="width:100%">
+  </div> 
+  <div class="column">
+    <img src="background\mm8.png" style="width:100%">
+    <img src="background\fgo7.jpg" style="width:100%">
+    <img src="background\fgo8.jpg" style="width:100%">
+    <img src="background\fgo9.jpg" style="width:100%">
+    <img src="background\5.jpg" style="width:100%">
+    <img src="background\inazuma art 2.jpg" style="width:100%">
+    <img src="background\inazuma art 5.jpg" style="width:100%">
+    <img src="background\inazuma art 3.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="background\6.jpg" style="width:100%">
+    <img src="background\7.jfif" style="width:100%">
+    <img src="background\8.jpg" style="width:100%">
+    <img src="background\9.jpg" style="width:100%">
+    <img src="background\1920-1080.jpg" style="width:100%"> 
+    <img src="background\2.jpg" style="width:100%">
+  </div> 
+
+</div>
+<script>
+// Get the elements with class="column"
+var elements = document.getElementsByClassName("column");
+
+// Declare a loop variable
+var i;
+
+// Full-width images
+function one() {
+    for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "100%";  // IE10
+    elements[i].style.flex = "100%";
+  }
+}
+
+// Two images side by side
+function two() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "50%";  // IE10
+    elements[i].style.flex = "50%";
+  }
+}
+
+// Four images side by side
+function four() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "25%";  // IE10
+    elements[i].style.flex = "25%";
+  }
+}
+// Add active class to the current button (highlight it)
+var header = document.getElementById("myHeader");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+</body>
+</html>
